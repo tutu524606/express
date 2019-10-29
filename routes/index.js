@@ -6,7 +6,8 @@ var indexModel = require('../models/home/index');
 /* GET home page. */
 // 进入主页面信息
 router.get('/', function(req, res, next) {
-    res.render('index', { title: '主页面1234' });
+    res.json('123');
+    // res.render('index', { title: '主页面1234' });
 });
 // 所有子路由的调用
 Object.entries(indexModel).forEach(childRoute => {
